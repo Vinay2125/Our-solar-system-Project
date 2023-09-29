@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details and Solar System Planets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="planet.css">
+    <style>
+        /* Add any additional styles you need here */
+        #foot {
+            margin-top: 105px;
+        }
+        tr:hover {
+            background-color: cadetblue;
+        }
+        body {
+            background-image: url(https://tse1.mm.bing.net/th?id=OIP.amxHHgjOutKlxo-CR9SuLgHaEK&pid=Api&P=0);
+            background-repeat: no-repeat;
+            background-size: 1300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- User Details Section -->
+    <br><br>
+    <h1 style="text-align:center;color: rgb(64, 19, 187);">Let's see the Details of Users</h1>
+    <div>
+        <br>
+    </div>
+    <center><h2>User Details</h2></center>
+    <form action='\login' method="GET">
+        <button class='nav-item btn btn-dark' style="margin-left:800px;color: red;" type="submit">LOGOUT</button>
+    </form>
+    <br>
+    <table border="1px" cellspacing="0px" cellpadding="10px" align="center" style="border-style:inset;" width="550px">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>phoneNo</th>
+        </tr>
+        <% for(var i = userData.length-6; i < userData.length; i++) { %>
+            <tr>
+                <td><%= userData[i].fullname %></td>
+                <td><%= userData[i].email %></td>
+                <td><%= userData[i].password %></td>
+            </tr>
+        <% } %>
+    </table>
+    <br>
+    <form action='\vinn' method="GET">
+        <button class='nav-item btn btn-dark' style="margin-left:550px;color: rgb(96, 234, 96);" type="submit">UniverseApp</button>
+    </form>
+    <br>
+
+    <!-- Planet Information Section -->
+    <div class="navBar" id="nv">
+        <nav>
+            <i class="bi bi-justify" onclick="alert('hello')" id="hamMenu"></i>
+            <ul>
+                <li><a href="sun.html" class="planet-link">The Sun</a></li>
+                <li><a href="mercury.html" class="planet-link">Mercury</a></li>
+                <li><a href="?planet=venus">Venus</a></li>
+                <li><a href="?planet=earth">Earth</a></li>
+                <li><a href="?planet=mars">Mars</a></li>
+                <li><a href="?planet=jupiter">Jupiter</a></li>
+                <li><a href="?planet=saturn">Saturn</a></li>
+                <li><a href="?planet=uranus">Uranus</a></li>
+                <li><a href="?planet=neptune">Neptune</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header">
+        <div class="IntroMsg">
+            <img alt="Solar System Planets" class="logo" src="solarplanet.jpg" id="introLogo" width="200" height="200" />
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for planets...">
+            <button onclick="performSearch()">search</button>
+        </div>
+
+        <div class='IntroMsg'>
+            <h1>Explore the Wonders of Our Solar System</h1>
+            <span>Discover the beauty and mysteries of each planet</span>
+            <h2><a href="tel:111-111-111" style="text-decoration: none; color: white;"><i class="bi bi-telephone-forward-fill"></i> <span>Contact Us for Space Tours</span></a></h2>
+        </div>
+    </div>
+
+    <div class="menu">   
+        <div class="menuIntro">
+          
+        </div>
+
+        <section id="home-menu">
+            <h2>Our Solar System</h2>
+            <h3>Discover the Planets</h3>
+            <ul>
+                <li>
+                    <span class="planet">The Sun</span>
+                    <span class="Description">The Sun is the center of our solar system and a blazing ball of nuclear fusion. It provides the energy that sustains life on Earth and all other planets.</span>
+                </li>
+                <li>
+                    <span class="planet">Pluto</span>
+                    <span class="Description">Pluto was once considered the ninth planet but is now classified as a dwarf planet at the edge of the solar system. It's known for its remote and icy environment.</span>
+                </li>
+                <li>
+                    <span class="planet">Saturn</span>
+                    <span class="Description">Saturn is famous for its stunning ring system made up of ice and rock particles. It's the sixth planet from the Sun and has numerous moons, including Titan.</span>
+                </li>
+                <li>
+                    <span class="planet">Mercury</span>
+                    <span class="Description">Mercury is the closest planet to the Sun and is known for its quick orbit and extreme temperature variations. It's a rocky planet without much of an atmosphere.</span>
+                </li>
+                <li>
+                    <span class="planet">Mars</span>
+                    <span class="Description">Mars is known for its distinctive red appearance. It has polar ice caps and evidence of past liquid water flows, making it a target for future exploration.</span>
+                </li>
+                <li>
+                    <span class="planet">Uranus</span>
+                    <span class="Description">Uranus is a unique planet in our solar system due to its extreme tilt, which causes it to rotate almost on its side. It's composed mostly of hydrogen and helium.</span>
+                </li>
+                <li>
+                    <span class="planet">Venus</span>
+                    <span class="Description">Venus is a scorching planet with a thick atmosphere that traps heat, making it the hottest planet in our solar system. It's often called Earth's "sister planet."</span>
+                </li>
+                <li>
+                    <span class="planet">Jupiter</span>
+                    <span class="Description">Jupiter is the largest planet in our solar system and has a powerful magnetic field. It's known for its swirling bands of clouds and the Great Red Spot, a massive storm.</span>
+                </li>
+                <li>
+                    <span class="planet">Earth</span>
+                    <span class="Description">Earth is the only known planet to support life. It has a diverse range of ecosystems, a protective atmosphere, and is home to a wide variety of species, including humans.</span>
+                </li>
+            </ul>
+            
+        </section>
+    </div>
+<div class="planet-section">
+    <a class="planet-link" href="sun.html">
+    <div class="menuIntro">
+        <img src="sun.jpg" />
+    </div>
+    </a>
+    <section id="home-menu" >
+        <h2>The Sun</h2>
+
+        <h3>Center of Our Solar System</h3>
+        <p>The Sun is a massive ball of hot plasma that emits light and heat, providing energy to all the planets in our solar system.</p>
+    </section>
+</div>
+
+
+<div class="planet-section">
+    <a class="planet-link" href="mercury.html">
+    <div class="menuIntro">
+        <img src="mercury.jpg" />
+    </div>
+</a>
+    <section id="home-menu">
+        <h2>Mercury</h2>
+        <h3>The Swiftest Planet</h3>
+        <p>Mercury is the closest planet to the Sun and is known for its quick orbit and extreme temperature variations.</p>
+    </div>
+    </section>
+
+</div>
+<div class="planet-section">
+    <a href="venus.html" class="planet-link">
+    <div class="menuIntro">
+        <img src="venus.jpg" />
+    </div>
+    </a>
+    <section id="home-menu">
+        <h2>Venus</h2>
+        <h3>The Hot and Cloudy Planet</h3>
+        <p>Venus is a scorching planet with a thick atmosphere that traps heat, making it the hottest planet in our solar system.</p>
+    </section>
+</div>
+<div class="planet-section">
+    <a href="earth.html" class="planet-link">
+    <div class="menuIntro">
+        <img src="earth.jpg" />
+    </div>
+</a>
+    <section id="home-menu">
+        <h2>Earth</h2>
+        <h3>The Blue Planet</h3>
+        <p>Earth is the only known planet to support life. It has a diverse range of ecosystems and a protective atmosphere.</p>
+    </section>
+</div>
+
+<div class="planet-section">
+    <a class="planet-link" href="mars.html">
+    <div class="menuIntro">
+        <img src="Mars.jpg" />
+    </div>
+    </a>
+    <section id="home-menu">
+        <h2>Mars</h2>
+        <h3>The Red Planet</h3>
+        <p>Mars is known for its distinctive red appearance. It has polar ice caps and evidence of past liquid water flows.</p>
+    </section>
+</div>
+
+<!-- Jupiter -->
+<div class="planet-section">
+    <a class="planet-link" href="jupiter.html">
+    <div class="menuIntro">
+        <img src="jupiter.jpg" />
+    </div>
+    </a>
+    <section id="home-menu">
+        <h2>Jupiter</h2>
+        <h3>The Giant of Our Solar System</h3>
+        <p>Jupiter is the largest planet and has a powerful magnetic field. It's known for its swirling bands of clouds and the Great Red Spot.</p>
+    </section>
+</div>
+
+<!-- Saturn -->
+<div class="planet-section">
+    <a class="planet-link" href="saturn.html">
+    <div class="menuIntro">
+        <img src="saturn.jpg" />
+    </div>
+    </a>
+    <section id="home-menu">
+        <h2>Saturn</h2>
+        <h3>The Ringed Planet</h3>
+        <p>Saturn is famous for its stunning ring system made up of ice and rock particles. It has numerous moons, including Titan.</p>
+    </section>
+</div>
+
+<!-- Uranus -->
+<div class="planet-section">
+    <a class="planet-link" href="uranus.html">
+    <div class="menuIntro">
+        <img src="uranus.jpg" />
+    </div>
+    </a>
+    <section id="home-menu">
+        <h2>Uranus</h2>
+        <h3>The Tilted Ice Giant</h3>
+        <p>Uranus is unique for its extreme tilt, which causes it to rotate almost on its side. It's composed mostly of hydrogen and helium.</p>
+    </section>
+</div>
+
+<!-- Neptune -->
+<div class="planet-section">
+    <a class="planet-link" href="neptune.html">
+    <div class="menuIntro">
+        <img src="neptune.jpg" />
+    </div>
+    </a>
+    <section id="home-menu">
+        <h2>Neptune</h2>
+        <h3>The Windy Blue Planet</h3>
+        <p>Neptune is the farthest planet from the Sun and has a striking blue color. It has powerful winds and a large dark storm called the Great Dark Spot.</p>
+    </section>
+</div>
+
+<div class="planet-section">
+    <a class="planet-link" href="pluto.html">
+    <div class="menuIntro">
+        <img src="pluto.jpg" />
+    </div>
+    </a>
+    <section id="home-menu">
+        <h2>Pluto</h2>
+        <h3>The Windy Blue Planet</h3>
+        <p>Pluto was discovered in 1930 by astronomer Clyde Tombaugh. In 2015, NASA's New Horizons spacecraft provided detailed images and data about Pluto during its flyby.</p>
+    </section>
+</div>
+
+    <script>
+        // JavaScript code for both sections can be placed here
+        document.addEventListener("DOMContentLoaded", function () {
+            const planetLinks = document.querySelectorAll(".planet-link");
+
+            planetLinks.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    const planetPage = this.getAttribute("href");
+
+                    window.location.href = planetPage;
+                });
+            });
+        });
+
+        function performSearch() {
+    var searchQuery = document.getElementById('searchInput').value.trim();
+
+    if (searchQuery !== "") {
+        var nasaUrl;
+
+        switch (searchQuery.toLowerCase()) {
+            case 'sun':
+                nasaUrl = 'sun.html';
+                break;
+            case 'mercury':
+                nasaUrl = 'mercury.html';
+                break;
+            case 'venus':
+                nasaUrl = 'venus.html';
+                break;
+            case 'pluto':
+                nasaUrl = 'pluto.html';
+                break;
+            case 'saturn':
+                nasaUrl = 'saturn.html';
+                break;
+            case 'mars':
+                nasaUrl = 'mars.html';
+                break;
+            case 'neptune':
+                nasaUrl = 'neptune.html';
+                break;
+            case 'earth':
+                nasaUrl = 'earth.html';
+                break;
+            case 'uranus':
+                nasaUrl = 'uranus.html';
+                break;
+            case 'jupiter':
+                nasaUrl = 'jupiter.html';
+                break;
+            default:
+                // Handle cases where the search query doesn't match any planet
+                alert("Planet not found");
+                return;
+        }
+
+        window.open(nasaUrl, '_blank');
+    }
+}
+    </script>
+
+    <!-- Bootstrap and other scripts go here -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

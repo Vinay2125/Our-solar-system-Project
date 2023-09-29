@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img\logo\planet-icon.png" />  
+    <title>Solar System Planets</title>
+    
+    <style>
+.navBar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navBar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navBar li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling for header */
+.header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header h2 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #ddd;
+}
+
+/* Styling for planet sections */
+/* Rest of your CSS */
+
+/* Styling for planet sections */
+body {
+    background-color: #222;
+    background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height:100%;
+            width:100vw;
+
+           
+        }
+
+        .planet-section {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(100, 98, 98, 0.288);
+            border-radius: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .planet-section:hover {
+            transform: scale(1.05);
+            box-shadow: rgb(38, 57, 77) 0px 30px 40px -10px;
+        }
+
+        .planet-section img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            border: 4px solid white;
+        }
+
+        .planet-section h2 {
+            margin-left: 20px;
+            font-size: 24px;
+        }
+
+        .planet-section h3 {
+            color: #999;
+            margin-top: 5px;
+            font-size: 18px;
+        }
+
+        .planet-details {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(100, 98, 98, 0.588);
+            border-radius: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            color: white;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .planet-section {
+        margin: 15px 0;
+        padding: 15px;
+    }
+}
+
+
+/* Styling for search bar */
+.search-bar {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navBar ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .navBar li {
+        display: block;
+        margin: 5px 0;
+    }
+    .header {
+        padding: 30px 0;
+    }
+    .planet-section {
+        margin: 15px 0;
+        padding: 15px;
+    }
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+}
+
+    </style>
+
+</head>
+
+<body >
+    <div class="navBar" id="nv">
+        <nav>
+            <i class="bi bi-justify" onclick="alert('hello')" id="hamMenu"></i>
+            <ul>
+                <li><a href="sun.html" class="planet-link">The Sun</a></li>
+                <li><a href="mercury.html" class="planet-link">Mercury</a></li>
+                <li><a href="?planet=venus">Venus</a></li>
+                <li><a href="?planet=earth">Earth</a></li>
+                <li><a href="?planet=mars">Mars</a></li>
+                <li><a href="?planet=jupiter">Jupiter</a></li>
+                <li><a href="?planet=saturn">Saturn</a></li>
+                <li><a href="?planet=uranus">Uranus</a></li>
+                <li><a href="?planet=neptune">Neptune</a></li>
+                
+               
+            </ul>
+            <ul>
+                <li><a href="haumea.html">Haumea</a></li>
+                <li><a href="makemake.html">Makemake</a></li>
+                <li><a href="ceres.html">Ceres</a></li>
+                <li><a href="eris">Eris</a></li>
+                <li><a href="moon.html">Earth's Moon</a></li>
+            </ul>
+        </nav>
+    </div>    
+
+    <div class="header">     
+        <div class="IntroMsg">
+            <div class="vin " style="text-align: center; padding-bottom: 25px; ">
+                <a href="OurSolarSystem.html" style="color: rgb(158, 157, 157);font-size:40px;text-decoration: none;">Our Solar System</a>
+                </div>
+            <img alt="Solar System Planets" class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR534TwCy0TjqGZtMDKJpTb4BnVMHZ_nhWwuQ&usqp=CAU" id="introLogo" width="200" height="200" />
+        </div>
+       
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for planets...">
+            <button onclick="performSearch()">search</button>
+        </div>
+
+        <div class='IntroMsg'>
+            <h1>Explore the Wonders of Our Solar System</h1>
+            <span>Discover the beauty and mysteries of each planet</span>
+            <h2><a href="tel:111-111-111" style="text-decoration: none; color: white;"><i class="bi bi-telephone-forward-fill"></i> <span>Contact Us for Space Tours</span></a></h2>
+            <h3><a href="tel:111-111-111" style="text-decoration: none; color: white;"><i class="bi bi-telephone-forward-fill"></i> <span>Ph no:9009009000</span></a></h3>
+        </div>
+    </div>
+
+    <!-- Planet sections -->
+    <div class="menu">   
+        <div class="menuIntro">
+          
+        </div>
+
+        <section id="home-menu">
+            <h2>Our Solar system</h2>
+            <h3>Discover the Planets</h3>
+            <ul>
+                <li>
+                    <span class="planet">The Sun</span>
+                    <span class="Description">The Sun is the center of our solar system and a blazing ball of nuclear fusion. It provides the energy that sustains life on Earth and all other planets.</span>
+                </li>
+                <li>
+                    <span class="planet">Pluto</span>
+                    <span class="Description">Pluto was once considered the ninth planet but is now classified as a dwarf planet at the edge of the solar system. It's known for its remote and icy environment.</span>
+                </li>
+                <li>
+                    <span class="planet">Saturn</span>
+                    <span class="Description">Saturn is famous for its stunning ring system made up of ice and rock particles. It's the sixth planet from the Sun and has numerous moons, including Titan.</span>
+                </li>
+                <li>
+                    <span class="planet">Mercury</span>
+                    <span class="Description">Mercury is the closest planet to the Sun and is known for its quick orbit and extreme temperature variations. It's a rocky planet without much of an atmosphere.</span>
+                </li>
+                <li>
+                    <span class="planet">Mars</span>
+                    <span class="Description">Mars is known for its distinctive red appearance. It has polar ice caps and evidence of past liquid water flows, making it a target for future exploration.</span>
+                </li>
+                <li>
+                    <span class="planet">Uranus</span>
+                    <span class="Description">Uranus is a unique planet in our solar system due to its extreme tilt, which causes it to rotate almost on its side. It's composed mostly of hydrogen and helium.</span>
+                </li>
+                <li>
+                    <span class="planet">Venus</span>
+                    <span class="Description">Venus is a scorching planet with a thick atmosphere that traps heat, making it the hottest planet in our solar system. It's often called Earth's "sister planet."</span>
+                </li>
+                <li>
+                    <span class="planet">Jupiter</span>
+                    <span class="Description">Jupiter is the largest planet in our solar system and has a powerful magnetic field. It's known for its swirling bands of clouds and the Great Red Spot, a massive storm.</span>
+                </li>
+                <li>
+                    <span class="planet">Earth</span>
+                    <span class="Description">Earth is the only known planet to support life. It has a diverse range of ecosystems, a protective atmosphere, and is home to a wide variety of species, including humans.</span>
+                </li>
+            </ul>
+            
+        </section>
+    </div>
+    <script>
+         
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const planetLinks = document.querySelectorAll(".planet-link");
+        
+            planetLinks.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); 
+        
+                
+                    const planetPage = this.getAttribute("href");
+        
+                    
+                    window.location.href = planetPage;
+                });
+            });
+        }); 
+        function performSearch() {
+        var searchQuery = document.getElementById('searchInput').value.trim();
+    
+        if (searchQuery !== "") {
+            var nasaUrl;
+    
+            switch (searchQuery.toLowerCase()) {
+                case 'sun':
+                    nasaUrl = 'sun.html';
+                    break;
+                case 'mercury':
+                    nasaUrl = 'mercury.html';
+                    break;
+                case 'venus':
+                    nasaUrl = 'venus.html';
+                    break;
+                case 'pluto':
+                    nasaUrl = 'pluto.html';
+                    break;
+                case 'saturn':
+                    nasaUrl = 'saturn.html';
+                    break;
+                case 'mars':
+                    nasaUrl = 'mars.html';
+                    break;
+                case 'neptune':
+                    nasaUrl = 'neptune.html';
+                    break;
+                case 'earth':
+                    nasaUrl = 'earth.html';
+                    break;
+                case 'uranus':
+                    nasaUrl = 'uranus.html';
+                    break;
+                case 'jupiter':
+                    nasaUrl = 'jupiter.html';
+                    break;
+                case 'OurSolarSystem':
+                    nasaUrl = 'OurSolarSystem';
+                    break
+                case 'haumea':
+                    nasaUrl = 'haumea.html';
+                    break;
+                case 'ceres':
+                    nasaUrl = 'ceres.html';
+                    break;
+                case 'eris':
+                    nasaUrl = 'eris.html';
+                    break;
+                case 'makemake':
+                    nasaUrl = 'makemake.html';
+                    break;
+                case 'moon':
+                    nasaUrl = 'moon.html';
+                    break;
+                    
+                    
+                default:
+                    // Handle cases where the search query doesn't match any planet
+                    alert("Planet not found");
+                    return;
+            }
+    
+            window.open(nasaUrl, '_blank');
+        }
+    }
+    </script>
+</body>
+</html>

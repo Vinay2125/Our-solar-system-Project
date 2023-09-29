@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Mercury</title>
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+            <img src="data:image/jpeg;base64,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" alt="Mercury">
+        </div>
+        <div class="planet-content">
+            <h1>Mercury</h1>
+            <p>
+                Mercury is the smallest planet in our solar system and is located closest to the Sun.
+            </p>
+            
+            <h2>Characteristics</h2>
+            <ul>
+                <li>Size: Diameter of about 4,880 kilometers (3,032 miles)</li>
+                <li>Surface: Heavily cratered due to impacts from space debris</li>
+                <li>Atmosphere: Very thin and almost negligible</li>
+            </ul>
+            
+            <h2>Extreme Temperatures</h2>
+            <p>
+                Mercury experiences extreme temperature variations. Daytime temperatures can reach up to 430°C (800°F), while nighttime temperatures can drop to around -180°C (-290°F).
+            </p>
+            
+            <h2>Rotation and Orbit</h2>
+            <p>
+                Mercury has a slow rotation and completes three rotations on its axis for every two orbits around the Sun. This results in its day being longer than its year.
+            </p>
+            
+            <h2>Polar Water Ice</h2>
+            <p>
+                Despite its proximity to the Sun, some deep craters near the poles of Mercury contain water ice. These craters are in permanent shadow and have maintained the ice.
+            </p>
+            
+            <h2>Magnetic Field and Moons</h2>
+            <p>
+                Mercury has a weak magnetic field and no moons.
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+                
+        </div>
+      
+    </div>
+</body>
+</html>

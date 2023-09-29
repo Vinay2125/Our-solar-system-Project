@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/dash.css">
+    <style>
+        /* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling for the dashboard layout */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #4158d0;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .user-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info p {
+    margin: 10px 0;
+  }
+  
+  /* Add more CSS styles as needed */
+  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% users.forEach(user => { %>
+                    <tr>
+                        <td><%= user.id %></td>
+                        <td><%= user.name %></td>
+                        <td><%= user.email %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <form action="/vinn">
+        <button >Home Page</button>
+    </form>
+    </main>
+</body>
+</html>
+

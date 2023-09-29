@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Uranus</title>
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+           
+            <img src="data:image/jpeg;base64,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" alt="Uranus">
+        </div>
+        <div class="planet-content">
+            <h1>Uranus</h1>
+            <p>
+                Uranus is the seventh planet from the Sun and is classified as an ice giant. It's a unique and fascinating world in our solar system.
+            </p>
+            <h2>Key Characteristics</h2>
+            <ul>
+                <li>Orbital Period: Approximately 84 Earth years</li>
+                <li>Tilted Axis: Uranus has a dramatic tilt, making it appear to roll along its orbit.</li>
+                <li>Composition: It consists of hydrogen, helium, and a significant amount of ice and rock.</li>
+            </ul>
+            <h2>Physical Characteristics</h2>
+            <p>
+                Uranus is notable for its extreme axial tilt of approximately 98 degrees, causing it to appear to roll on its side as it orbits the Sun. This unique feature gives it a distinct appearance.
+            </p>
+            <h2>Rings and Moons</h2>
+            <p>
+                Uranus has a system of 13 known rings and 27 confirmed moons. Its five largest moons are Miranda, Ariel, Umbriel, Titania, and Oberon.
+            </p>
+            <h2>Exploration</h2>
+            <p>
+                Uranus has been visited by a single spacecraft, Voyager 2, in 1986. The spacecraft provided valuable data about the planet's atmosphere, rings, and moons.
+            </p>
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>Uranus is often referred to as the "sideways planet" due to its unique rotational axis.</li>
+                <li>It was the first planet discovered with a telescope by German-born British astronomer Sir William Herschel in 1781.</li>
+            </ul>
+            <h2 style="background-color: rgb(236, 233, 233);">Uranus Moons</h2>
+            <p>
+                <a href="uranusmoons.html">Learn more about Uranus Moon's</a>
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

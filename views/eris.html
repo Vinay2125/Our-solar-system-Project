@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Eris</title>
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+           
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4-pF_fDxSWQh3Pc2PX2oHAJPnXpRUjuy8w&usqp=CAU">
+        </div>
+        <div class="planet-content">
+                <h1>Eris: Dwarf Planet</h1>
+            
+                <h2>Discovery</h2>
+                <p>Eris was discovered on January 5, 2005, by a team of astronomers led by Mike Brown at the Palomar Observatory in California. Its discovery led to the reclassification of Pluto as a dwarf planet.</p>
+            
+                <h2>Location</h2>
+                <p>Eris is located in the outer regions of the solar system in a region known as the scattered disc, which is beyond the Kuiper Belt. It is one of the most distant known objects in the solar system.</p>
+            
+                <h2>Characteristics</h2>
+                <ul>
+                    <li><strong>Diameter:</strong> Eris has a diameter of about 2,326 kilometers (1,445 miles), making it one of the largest dwarf planets in the solar system.</li>
+                    <li><strong>Surface:</strong> Eris's surface composition is not well known, but it is believed to be covered in a layer of frozen methane and other ices.</li>
+                    <li><strong>Named After:</strong> Eris is named after the Greek goddess of strife and discord.</li>
+                </ul>
+                <h2 style="background-color: rgb(236, 233, 233);">Eris Moons</h2>
+            <p>
+                <a href="erismoons.html">Learn more about Eris Moon's</a>
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Earth's Moon</title>
+</head>
+<body>
+    <div class="planet-details">
+    <div class="planet-image">
+        
+        <img src="data:image/jpeg;base64,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" alt="Moon">
+    </div>
+    <div class="planet-content">
+        <h1>Earth's Moon</h1>
+        <p>
+            Earth's moon, often simply called "the Moon," is the natural satellite of the Earth and is the fifth-largest moon in the Solar System. It is the only celestial body beyond Earth that humans have visited.
+        </p>
+
+        <h2>Characteristics</h2>
+        <ul>
+            <li>Size: Diameter of about 3,474 kilometers (2,159 miles)</li>
+            <li>Surface: Covered in craters, plains, and mountains</li>
+            <li>Atmosphere: Virtually no atmosphere, so there is no air to breathe</li>
+        </ul>
+
+        <h2>Phases of the Moon</h2>
+        <p>
+            The Moon goes through different phases as it orbits the Earth. These phases include New Moon, First Quarter, Full Moon, and Last Quarter. These phases are a result of the changing positions of the Moon, Earth, and the Sun.
+        </p>
+
+        <h2>Impact on Earth</h2>
+        <p>
+            The Moon has several significant effects on Earth, including causing tides due to its gravitational pull. These tides play a crucial role in the Earth's oceanic and coastal ecosystems.
+        </p>
+
+        <h2>Moon Landings</h2>
+        <p>
+            The Moon has been the target of several human missions, with the most famous being NASA's Apollo program. Apollo 11, in 1969, was the first successful mission that landed astronauts Neil Armstrong and Buzz Aldrin on the Moon's surface.
+        </p>
+
+        <h2>Future Exploration</h2>
+        <p>
+            There are plans for future lunar exploration, including missions to establish a permanent human presence on the Moon, known as the Artemis program.
+        </p>
+        <div style="display: flex; justify-content: center;">
+            <form action="/OurSolarSystem" method="GET">
+                <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+            </form>
+            <form action="/planet" method="GET">
+                <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+            </form>
+    </div>
+
+</div>
+</body>
+</html>
+

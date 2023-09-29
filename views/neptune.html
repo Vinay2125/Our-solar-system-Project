@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+           
+            <img src="data:image/jpeg;base64,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" alt="Neptune">
+            
+        </div>
+        <div class="planet-content">
+            <h1>Neptune</h1>
+            <p>
+                Neptune is the eighth and farthest known planet from the Sun in the solar system. It is a gas giant and one of the ice giants, similar to Uranus.
+            </p>
+            <h2>Key Characteristics</h2>
+            <ul>
+                <li>Orbital Period: Approximately 165 Earth years</li>
+                <li>Atmosphere: Composed mainly of hydrogen and helium, with traces of methane giving it a blue color</li>
+                <li>Great Dark Spot: A massive storm system similar to Jupiter's Great Red Spot</li>
+            </ul>
+            <h2>Physical Characteristics</h2>
+            <p>
+                Neptune is known for its striking deep blue color, which is the result of methane in its atmosphere absorbing red light. It has a dynamic atmosphere with high-speed winds and storm systems.
+            </p>
+            <h2>Rings and Moons</h2>
+            <p>
+                Neptune has a faint ring system and a diverse array of moons. Triton, its largest moon, is particularly notable for its retrograde orbit and potential cryovolcanic activity.
+            </p>
+            <h2>Exploration</h2>
+            <p>
+                Neptune has been visited by only one spacecraft, Voyager 2, in 1989. It provided valuable data about the planet and its moons, but future missions may be planned to study it in more detail.
+            </p>
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>Neptune's extreme distance from the Sun results in very cold temperatures, making it one of the coldest planets in the solar system.</li>
+                <li>The planet's fast winds can reach speeds of over 1,000 miles per hour (1,600 kilometers per hour).</li>
+            </ul>
+            <h2 style="background-color: rgb(236, 233, 233);">Neptune Moons</h2>
+            <p>
+                <a href="neptunemoons.html">Learn more about Neptune Moon's</a>
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

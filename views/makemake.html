@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Makemake</title>
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+            
+            <img src="data:image/jpeg;base64,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">
+        </div>
+        <div class="planet-content">
+             <h1>Makemake: Dwarf Planet</h1>
+
+            <h2>Discovery</h2>
+            <p>Makemake was discovered on March 31, 2005, by a team of astronomers led by Mike Brown at the Palomar Observatory. It is one of the largest known objects in the Kuiper Belt.</p>
+        
+            <h2>Location</h2>
+            <p>Makemake is located in the Kuiper Belt, a region of the solar system beyond the orbit of Neptune that is home to many small icy objects.</p>
+        
+            <h2>Characteristics</h2>
+            <ul>
+                <li><strong>Diameter:</strong> Makemake has a diameter of about 1,430 kilometers (888 miles).</li>
+                <li><strong>Surface:</strong> Makemake's surface is believed to be covered in frozen methane and ethane, which gives it a reddish color.</li>
+                <li><strong>Named After:</strong> Makemake is named after the creation deity of the Rapa Nui people of Easter Island.</li>
+            </ul>
+        
+            <h2>Atmosphere</h2>
+            <p>Makemake is thought to have a thin atmosphere of methane, but it has not been extensively studied due to its distance from Earth.</p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+        </div>
+        </div>
+        </body>
+        </html>
+    
+        
+        

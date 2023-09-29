@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Moons of uranus</title>
+   <style>
+   .vin{
+    text-align: center;
+   }
+   .mainbody{
+    background-image:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDxUPDw8PDw8PDw8PDw8PDw8PDw8PFREWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NDw0NFSsZFRkrKy0rKysrKys3LS0tKy03Ky03Ny0rLSsrLSsrKysrKysrLSsrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQIDBAf/xAAiEAEBAQEBAAEEAgMAAAAAAAAAARESAlEhocHwYbETMUH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EABcRAQEBAQAAAAAAAAAAAAAAAAARARL/2gAMAwEAAhEDEQA/APjag9uOACtIWiLARQkEAABagAAAABAFFxFA1YkagiUrUv8ATPoEQBSgIIAiiWKAyjVSo0yoJB0k/fn6oDowKgIKigAAAAAAAAaAKEABYiwBYlBGoyu/v0QCLb9kAQl/clVBRARQBAZrSAgokVVRW2AAAAAAAAAAA0AABQABUUBaiiIN/H8M2CpFsRbRERUFAAEUwVIAgAJBQG2QAAUgIKUEFICAIAUFEFQAAFiKoACNeaEi1Rmi1KCIoCLQBBSRFRFAQUAFFRFnx+PyQAFMBBcAQFwEABBUQAUEBRUUBBcFxRYpIuLGaziVrAi1kxaEKziVvEwisi2GIIc/9+P9qmAguANYYo1GUwUIItu/aLJ8/YWCGLhgJgpiQrNiY1gRazUxuokKzhjUhhFrI1hhBMWRcUiUkDFxYlUxcMVGcMawsBkqmAyYuAqYmNAM4Y0mEKyqqkKmDWGNIiNYpBnBqQwiVnFxowhWUxvDFhWMR0xOUhWDG8MItYwxrDlIVnDG8MWFYxcaxcIVmRrFxqeViMYsa5awg52GN4nKxGcSxvE5ItYwxvEsIVnExvDEgwmNmEKyjYkEXFxcajNZxb9VxcWDJjeLgOeLy6Tycg54Y6YuEHLk5dcMIOOGOvJyQcsMdeV5IOPK8uvJyQrnys8unK4Qrny158tzys8rCsYvLpkSwgxymOmHJBz5Tl0vkwg5YnLphgOd8pfLpYYg5XymOuGA5YOnIKzIuN8risMYuN4SLBnknluRcIMYSN4vKwYwx0wwhWOTl0wwiVz5OXXk5WFcuSeXXkng5K58nLryckWuXK8uvKzyRK5+fCzw6Tys8rCufKcuvJyQrlynLriYRa5cljrYnJCuciWOlhIkK5YljpiYkK54cumJhCsWDXIkWpIvLUizy1GKxi43PKyLCsSLI6Tys8kRznlcdJ5WeVg58rPLpys8rCufJw64YsSufK8umLyvJ05cry68mEK5crPLrycnJXPk5dZ5OV5OnPkkdeTkhXP15THXEsIVyvlOXXExIVz5Tl1TEhXK+WeXexnCLXGwvn7u18pykHHEsdb5ZsSK44OmCFSRueTzG5FzEZ5a5bxZ5WJWJCR0xZ5WJXPFnl0nleWolc5Fnl1nleVg5crPLrws8qjlys8us8ryDlyvLrys8KOU8nLtwcA5Tys8OvK8A43wcu3CcpBx4OXe+UnkiuHKXw78pfIOHLPL0cl8oPPyzfL0Xyl8A8/JjtyzfKRa44z6jtYxYzFzXHBvBIqTy35ihia1PLcgNMtcrPIKLys8gqNTys8govLU8AC8rPIKNcLwgDU8E8Agv+NeAFTg4ADhOABL4Z5AEvlOQBnkvkAZvli+QRWLHOxBkxMAZaf/2Q==");
+   height: 100%;
+   width:100%;
+   background-size: cover;
+
+}
+.very{
+    color:aliceblue;
+}
+   </style>
+
+</head>
+<body>
+    <div class="mainbody">
+   
+    <div class="vin">
+    <h1 style="color: aquamarine;">Moons of Uranus</h1>
+    </div>
+    <div class="very d-flex flex-row justify-content-center">
+       
+    <table border="2" width="75%">
+       
+        <thead>
+            <tr style="color: rgb(240, 176, 14); ">
+                <th>Name</th>
+                <th>Year Discovered</th>
+                <th>Discoverer</th>
+                <th>Distance from Uranus (km)</th>
+                <th>Size (km)</th>
+                <th>Orbital Period (days)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td  id="europaCell" class="moonLink" style="color:rgb(255, 140, 0);">Ariel</td>
+                <td>1851</td>
+                <td>W. Lassell</td>
+                <td>191,240</td>
+                <td>1160</td>
+                <td>2.520</td>
+            </tr>
+            <tr>
+                <td>Belinda</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>75,260</td>
+                <td>66</td>
+                <td>0.624</td>
+            </tr>
+            <tr>
+                <td>Bianca</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>75,260</td>
+                <td>42</td>
+                <td>0.433</td>
+            </tr>
+            <tr>
+                <td>Caliban</td>
+                <td>1997</td>
+                <td>Gladman, Nicholson, Burns, & Kavelaars</td>
+                <td>7,200,000</td>
+                <td>80</td>
+                <td>579.5</td>
+            </tr>
+            <tr>
+                <td>Cordelia</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>49,750</td>
+                <td>26</td>
+                <td>0.335</td>
+            </tr>
+            <tr>
+                <td>Cressida</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>61,770</td>
+                <td>62</td>
+                <td>0.464</td>
+            </tr>
+            <tr>
+                <td>Cupid</td>
+                <td>2003</td>
+                <td>M. Showalter & J. Lissauer</td>
+                <td>74,800</td>
+                <td>12</td>
+                <td>0.618</td>
+            </tr>
+            <tr>
+                <td>Desdemona</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>62,660</td>
+                <td>54</td>
+                <td>0.474</td>
+            </tr>
+            <tr>
+                <td>Ferdinand</td>
+                <td>2001</td>
+                <td>M. Holman & B. Gladman et al</td>
+                <td>20,901,000</td>
+                <td>21</td>
+                <td>2,823.4</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td>2001</td>
+                <td>M. Holman & B. Gladman et al</td>
+                <td>4,276,000</td>
+                <td>22</td>
+                <td>266.6</td>
+            </tr>
+            <tr>
+                <td>Juliet</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>64,360</td>
+                <td>84</td>
+                <td>0.493</td>
+            </tr>
+            <tr>
+                <td>Mab</td>
+                <td>2003</td>
+                <td>M. Showalter & J. Lissauer</td>
+                <td>97,734</td>
+                <td>16</td>
+                <td>0.923</td>
+            </tr>
+            <tr>
+                <td>Margaret</td>
+                <td>2003</td>
+                <td>S. Sheppard</td>
+                <td>14,688,700</td>
+                <td>11</td>
+                <td>1,694.8</td>
+            </tr>
+            <tr>
+                <td id="europaCell" class="moonLink" style="color:rgb(255, 140, 0);">Miranda</td>
+                <td>1948</td>
+                <td>G. Kuiper</td>
+                <td>129,780</td>
+                <td>472</td>
+                <td>1.414</td>
+            </tr>
+            <tr>
+                <td id="europaCell" class="moonLink" style="color:rgb(255, 140, 0);">Oberon</td>
+                <td>1787</td>
+                <td>W. Herschel</td>
+                <td>582,600</td>
+                <td>1526</td>
+                <td>13.463</td>
+            </tr>
+            <tr>
+                <td>Ophelia</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>53,440</td>
+                <td>30.4</td>
+                <td>0.3764</td>
+            </tr>
+            <tr>
+                <td>Perdita</td>
+                <td>1986</td>
+                <td>E. Karkoschka/Voyager 2</td>
+                <td>76,420</td>
+                <td>20</td>
+                <td>0.638</td>
+            </tr>
+            <tr>
+                <td>Portia</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>66,085</td>
+                <td>108</td>
+                <td>0.513</td>
+            </tr>
+            <tr>
+                <td>Prospero</td>
+                <td>1999</td>
+                <td>Kavelaars, Gladman, Holman et al</td>
+                <td>16,256,000</td>
+                <td>30</td>
+                <td>5.346</td>
+            </tr>
+            <tr>
+                <td>Puck</td>
+                <td>1985</td>
+                <td>Voyager 2</td>
+                <td>86,010</td>
+                <td>154</td>
+                <td>0.762</td>
+            </tr>
+            <tr>
+                <td>Rosalind</td>
+                <td>1986</td>
+                <td>Voyager 2</td>
+                <td>69,941</td>
+                <td>54</td>
+                <td>0.558</td>
+            </tr>
+            <tr>
+                <td>Setebos</td>
+                <td>1999</td>
+                <td>Kavelaars, Gladman, Holman et al</td>
+                <td>17,418,000</td>
+                <td>47</td>
+                <td>2,234.8</td>
+            </tr>
+            <tr>
+                <td>Stephano</td>
+                <td>1999</td>
+                <td>Kavelaars, Gladman, Holman et al</td>
+                <td>8,004,000</td>
+                <td>32</td>
+                <td>677.4</td>
+            </tr>
+            <tr>
+                <td>Sycorax</td>
+                <td>1997</td>
+                <td>Gladman, Nicholson, Burns, & Kavelaars</td>
+                <td>12,200,000</td>
+                <td>160</td>
+                <td>1283.39</td>
+            </tr>
+            <tr>
+                <td id="europaCell" class="moonLink" style="color:rgb(255, 140, 0);">Titania</td>
+                <td>1787</td>
+                <td>W. Herschel</td>
+                <td>435,840</td>
+                <td>1,578</td>
+                <td>8.706</td>
+            </tr>
+            <tr>
+                <td>Trinculo</td>
+                <td>2001</td>
+                <td>M. Holman, J. Kavelaars & D. Milisavljevic</td>
+                <td>8,578,000</td>
+                <td>10</td>
+                <td>759.0</td>
+            </tr>
+            <tr>
+                <td>Umbriel</td>
+                <td>1851</td>
+                <td>W. Lassel</td>
+                <td>265,970</td>
+                <td>1190</td>
+                <td>4.144</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <form action="/uranus" method="GET">
+            <button style="font-weight: 600;margin-top:40px; margin-right:1090px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+        </form>
+        <form action="/planet" method="GET">
+            <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #c76809; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+        </form>
+        
+    </div>
+
+    </div>
+    <script>
+        const moonCells = document.querySelectorAll('.moonLink');
+moonCells.forEach((moonCell) => {
+moonCell.addEventListener('click', () => {
+    const moonName = moonCell.innerText;
+    const moonURL = `https://solarsystem.nasa.gov/moons/uranus-moons/${moonName.toLowerCase()}/in-depth/`;
+    window.open(moonURL, '_blank');
+});
+});
+
+</script>
+</body>
+</html>
+

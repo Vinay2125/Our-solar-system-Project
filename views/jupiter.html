@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Jupiter</title>
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+            
+            <img src="data:image/jpeg;base64,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" alt="Jupiter">
+        </div>
+        <div class="planet-content">
+            <h1>Jupiter</h1>
+            <p>
+                Jupiter, often referred to as the "Gas Giant," is the largest planet in our solar system and a magnificent object in the night sky.
+            </p>
+            <h2>Key Characteristics</h2>
+            <ul>
+                <li>Massive Size: Jupiter is more massive than all the other planets in the solar system combined.</li>
+                <li>Gaseous Composition: It consists mainly of hydrogen and helium.</li>
+                <li>Great Red Spot: Jupiter has a prominent feature known as the Great Red Spot, a massive storm that has been raging for centuries.</li>
+            </ul>
+            <h2>Atmosphere and Weather</h2>
+            <p>
+                Jupiter's atmosphere is characterized by bands of clouds, with the Great Red Spot being a notable exception. It experiences extreme weather, including powerful winds and lightning.
+            </p>
+            <h2>Rings and Moons</h2>
+            <p>
+                Jupiter has a system of faint rings and numerous moons. Its largest moons, known as the Galilean moons, include Io, Europa, Ganymede, and Callisto.
+            </p>
+            <h2>Exploration</h2>
+            <p>
+                Several spacecraft have visited Jupiter, including NASA's Juno mission, which is currently studying the planet's composition, gravity field, magnetic field, and polar magnetosphere.
+            </p>
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>Jupiter's massive gravity affects the orbits of other nearby objects in space.</li>
+                <li>It is often called a "failed star" because of its gaseous composition.</li>
+                <li>Observing Jupiter through a telescope allows you to see its bands, the Great Red Spot, and its four largest moons.</li>
+            </ul>
+            <h2 style="background-color: rgb(236, 233, 233);">Jupiter Moons</h2>
+            <p>
+            
+                <a href="jupitermoons.html">Learn more about Jupiter Moons</a>
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

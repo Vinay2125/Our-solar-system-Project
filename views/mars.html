@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Mars</title>
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+            <img src="data:image/jpeg;base64,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" alt="Mars">
+        </div>
+        <div class="planet-content">
+            <h1>Mars</h1>
+            <p>
+               Mars, often referred to as the "Red Planet," is the fourth planet from the Sun and the second smallest planet in our solar system. It has fascinated astronomers and space enthusiasts for centuries.
+            </p>
+            <h2>Key Characteristics</h2>
+            <ul>
+                <li>Reddish Appearance: Mars gets its red color from iron oxide (rust) on its surface.</li>
+                <li>Thin Atmosphere: Mars has a thin atmosphere primarily composed of carbon dioxide.</li>
+                <li>Two Moons: Mars has two small moons, Phobos and Deimos.</li>
+            </ul>
+            <h2>Surface Features</h2>
+            <p>
+                Mars is known for its diverse surface features, including vast plains, towering volcanoes (like Olympus Mons, the tallest volcano in the solar system), and a massive canyon system called Valles Marineris.
+            </p>
+            <h2>Possible Past Life</h2>
+            <p>
+                Mars has been a target for the search for past or present life. Some missions have discovered evidence of water in the past, which raises the possibility of microbial life.
+            </p>
+            <h2>Exploration</h2>
+            <p>
+                Numerous spacecraft and rovers have been sent to Mars for exploration. Notable missions include NASA's Curiosity and Perseverance rovers, which are studying the planet's geology and searching for signs of ancient life.
+            </p>
+            <h2>Future Missions</h2>
+            <p>
+                There are ongoing plans for crewed missions to Mars, with the goal of sending humans to the planet in the coming decades.
+            </p>
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>Mars has the largest volcano and deepest canyon in the solar system.</li>
+                <li>It experiences extreme temperature variations and dust storms.</li>
+                <li>Many science fiction stories and movies are set on Mars, reflecting its allure as a potential future destination for humans.</li>
+            </ul>
+            <h2 style="background-color: rgb(236, 233, 233);">Mars Moons</h2>
+            <p>
+                <a href="marsmoon.html">Learn more about Mars Moon's</a>
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+               </div>
+    </div>
+</body>
+</html>
+

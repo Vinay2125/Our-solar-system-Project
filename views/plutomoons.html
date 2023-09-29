@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Moons of Various Planets</title>
+    <style>
+        .mainbody{
+             background: linear-gradient(  rgba(1, 6, 29, 0.947) 15%, rgb(5, 32, 119) 100%);
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    text-align: center;
+        }
+        h1{
+ padding-top: 200px;
+ text-align: center;
+ color: white;
+ 
+        }
+     </style>
+</head>
+<body>
+    <div class="mainbody">
+    <h1>List of Pluto Planets</h1>
+    <h2 style="color:  rgb(240, 176, 14);;">Uranus Moons</h2>
+    <div class="vin d-flex flex-row justify-content-center">
+    <table border="2" width="75%" style="color: aliceblue">
+        <thead>
+            <tr style="color: aquamarine;">
+                <th>Name</th>
+                <th>Year Discovered</th>
+                <th>Discoverer</th>
+                <th>Distance from Pluto (km)</th>
+                <th>Size (km)</th>
+                <th>Orbital Period (days)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="europaCell" class="moonLink" style="color:rgb(255, 140, 0);">Charon</td>
+                <td>1978</td>
+                <td>J. Christy</td>
+                <td>19,571</td>
+                <td>1,207</td>
+                <td>6.387</td>
+            </tr>
+            <tr>
+                <td>Nix</td>
+                <td>2005</td>
+                <td>H.A. Weaver, S.A. Stern, et al.</td>
+                <td>48,675</td>
+                <td>44-130</td>
+                <td>24.856</td>
+            </tr>
+            <tr>
+                <td>Hydra</td>
+                <td>2005</td>
+                <td>H.A. Weaver, S.A. Stern, et al.</td>
+                <td>64,780</td>
+                <td>44-130</td>
+                <td>38.206</td>
+            </tr>
+            <tr>
+                <td id="europaCell" class="moonLink" style="color:rgb(255, 140, 0);">Kerberos</td>
+                <td>2011</td>
+                <td>Showalter, M. R. et al.</td>
+                <td>59,000</td>
+                <td>13-34</td>
+                <td>32.1</td>
+            </tr>
+            <tr>
+                <td>Styx</td>
+                <td>2012</td>
+                <td>Showalter, M. R. et al.</td>
+                <td>42,000</td>
+                <td>10-25</td>
+                <td>20.2</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+        <div style="display: flex; justify-content: center;">
+            <form action="/pluto" method="GET">
+                <button style="font-weight: 600;margin-top:40px; margin-right:1110px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+            </form>
+            <form action="/planet" method="GET">
+                <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #c76809; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+            </form>
+        </div>
+        </div>
+        <script>
+            const moonCells = document.querySelectorAll('.moonLink');
+    moonCells.forEach((moonCell) => {
+    moonCell.addEventListener('click', () => {
+        const moonName = moonCell.innerText;
+        const moonURL = `https://solarsystem.nasa.gov/moons/pluto-moons/${moonName.toLowerCase()}/in-depth/`;
+        window.open(moonURL, '_blank');
+    });
+    });
+    
+    </script>
+
+</body>
+</html>

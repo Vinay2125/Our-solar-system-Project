@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Saturn</title>
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+          
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBUQEBAVFRUVFRUVFRAVEBUVEBUPFRUWFxUVFRUYHyggGBolGxUVITEhJiorLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFysdHR0tLS0tKy0rLS0tLS0tLS0tKy0tKy0tLS0tKy0tKzctLS0tKy0tLS0tKy0tLSstKystLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABDEAABAwEDCAcFBAkEAwAAAAABAAIRAwQhMQUGEkFRYXGBIjKRobHB8BNCUpLRI2Jy4QcUM0NTgpOywhZjovGD0uL/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB8RAQEBAQEAAwEAAwAAAAAAAAABEQISAyExURNBYf/aAAwDAQACEQMRAD8A8PT9T69XKKaAQhCAQmXXRAxJnXfHdd3lJUCEKTiLoEXX3zJ27uCgdKo5p0muLSMCCQRN2IUUIQWWeq9jg5ji1wkhwdokXXweEqBKSFQJzdHr1ckhAJpJqAQAhCoE0ISBoQmAqHUbEXgyAbjMTqO9RKb4m7kJm7ikgSAhDhH5GfBQAKk6oTM3kmSTeSePM9qgg+uCIlIv14QZw23a9ihKaSBkb5w8EwoolVUikhCAQhSCADUJoRFKE0llQmkhA0JKQP5eu1Ak0IQTdThodpNMz0QTpNj4hGvVwUPXrvQhUCYB2YY7gkhAy4mL8LhuEkwOZPakhNAIQFs8j5Cr2o/Zthuuo65nLbyUv0NbCBs7ta9MyPmDZ2QaxNV2w9Gn8ov7SuusOSqNIRSpMZ+FgHgs+ovl4jTyXaHXts9UjdRefJN2SbSMbNWHGi/6L31tFS9gNivox86OEGDcRqNx7EwvoO05LpVQWvY1wOpzQ4dhXMZV/RzZasmlNF21t7J3sOrgQrqY8iKS3+cGalqsUuqM0qc/tmXs3aWtp43bytFCqIoThJAkJpIBJSJ3etqSBITQECTTAQAqptdBuSThKEQ0IQgrQBtQFZQs76hhjHOOxrST3KKrdE3Yd8JLcUc3LU790APvPaO4GVlU8z7Sfep9rj4NU2Llc6munGZdfXUpj5vok7MuvqqUj/MR5KeoZXMyiV0T8zbSPepHhUP0VFTNS1jBjXcHjzhX1EytKXIWxqZv2tuNB3Ig+BWLUsFZuNGoONN30TTFCEjcm3YqgTQt9mrkj2z9N46LTcNRKnVyasmthmpmp7aKtcdHFtPCd7t25el2OxtaAGgAC4ACAAsTJ1LRAC3NAhea9+nSTEqdFXtpqdNqvaxIKWtUwFeGJ6C1oo0U9FXezS0Cr6TFD6QIIIBBuIN4IOohebZ6fo/gGvYWREl9mGBGs0t/3ezYfT9HckQrOkx8zx63qK9O/SXmkIdbrO2Ivr0wLiP4oG34u3bPmZC6y6zZiCEyElUJCaIQJOEJwqEE0IQCEJSgaEIJm9UbfNjJTLQ9xqdRgEtmNJzpgTsuPcu5s1FohjAGtGoCABw9YrhM18ptoVSH9SoA1x+Ejqu7z2rvqJDXScCIJGw6x3di49frpz+JGoB1Rh7xvM7kPPxEk7JUX0tEkcwdRCdRvSmbiInYZketoCw0J4Dv8fopU3FxhoLjsA+ioqtOrZd5hZ9i/YjQAJJcHDa4NcWNO4mOPNJNLcL2Lhe4tbxf9JS0WYF4PBrisWznTd0r7iZnGMOA+iWW8pOoEUqTQCZ6UfeYy7YSajeF+MX3E1mtsoOGl/SP1QbC/wC98hWsaxzj9pVe46+kQ2dzQcOKl7Cn8AMazEKfQy6tgJxaDxpuP+K19fIVA9agzsDT5LGteV7HROi7Q0hi1tPSIOwxgVhnO2yjq06o4ADwcrJU1RlzIVmpU9JrXBxIawCpILztmbsTyXTZuWEU6bWxgFy9PKDbZamRp6DGmA8ydMm84m6AF3+T6EALPybmLy2FnprNpsVNFqy6YXHGljAshjlWwK5oVFjXqwEKoNT0VdTF0I0VVepCoVfRieikWoFRS0wrsRTUpAgggEG4gi4g6ivBM98g/qNrdTaPs3dOkf8AbPuztaZHCNq+gC4Lhv0sZLFax+2A6VB2lv8AZPhrx/a7+Vb46ypY8XIUSFYQkQvQ5oIhThKECAQnPrX2pIEU0QmgSRCaRKoSEJoKlv8AIOcbqEU6oLqer4mcNo3LQIWLNWXHq1jtdOqwOa4PYcCMWnyO4q8tgfE069XPYV5XYbdVoO0qTy069hGwjArr8kZ203XVvs3YaYk0zx2c5G9c7y3OnRlnMd44/VFF5YZbeD1m6iPI706VRrgHNIE3hzTNMjbdhyU3N23bxe0rDSbqIf8AaUj0heWmA4HWY9A7tdNss7bS3Qd0KjcCZ7D6nXiJQWkGcCMHA3jnqVxrB11Vs/faIcOLda1qY1jHuY7QqjRd3P3tO3drnkLizZhjwKz30tJsGKzNnvN8wVh/qrh+ydpf7TzDxua7XzTDXnOWckvs74MlhPRftGw71r4XqFTQfNOo2Ccab248jjyXO5TzSB6VndH3HGW8nYjmtzv+s3n+MHNBn2pO4L1PJzrgvMs3bPUoVy2qwtJ2i48DgeS9Jyebgsd/q8/jeUQCsltJYVArOpOWMlaWNaVY0KTCrA0KeTUQpBTFNMU0801CEaKnopLOCGiiFNCmCshYmUrIK1KpSdg9jmHg4Eeaziqnpg+aC0i43EXEbxcVFdNnBm3XFes6mA8GrUIAMOALyYg/Vc7WpOYdF7S07HAg969ssrlZipIqSi4qoSAVAlNqCSEIKoUpIQgEICERWhCZCypJhATQZdgyjWs/SpVIk3sxaYi8tN26cbiuoyZnk03Vmlh1vb0mHi03jvXFoUvMqy49Ystrp1RpU3Aj4mGW8xiPVyv0ee9vmNS8ks9d9N2kxxadrSQe5b+wZ3VmQKrRUHxdR/aLu5YvDc6d0BfIN+ogw712qz289dofv6rxzFx5rTWHOSzVol4a46qkNdjHWFx5rbgg6+E+Th+SxljX6sLWvGjpBw/h1RB5OwngVj1LHoYF1M/C8F9Pk7Ed6sc3bcO1vb/2pU3ubc0mNmLflP5JqYxXtcB06cj42dNndeOwK+xW2OqQ4birBUbiWwfipmP+Ju70qlBjzeWOO100qvAOET2pko3FkypTNzjon72HatzQeCJBBG0GQuJqWVzfec37tRuk3k5vnKKT6rL2tP4qT9Idg6XcmGvQGK5pXE2TOSoDBc133XDRf64rc2bOWmeuxzd46Te3HuUHQtKmHLAs2UqNTq1WndMHsN6zAVRcHJ3KoFSlBPQCRphKUaSmQI01U+mrC5YOVbaKNGpVdgxjnng1pPkmQcBbKzXVHmLi98ObfdpHED/64KmpRZUaQdF7dYcARznDnC89seUa1J2kx5kmXA3tcTjI811WScs07QYPQqjUDBI1ljvJdLzjM61G3ZsUH9XSpO3Xs+U6uBWgt2bVop3tAqDazrRvab+yV3ArOb1hpN2tA0v5mHonuPFWtDXDSa67aJLQdhHWYeMqTqrkeU1GkGCIIxaQQRyKAvTbdYKdURWph2xx/wAXhc9b80hjQf8AyP8AJw81udz/AGzeXKJLItthq0TFVhbvPVPAi4rHXRkJJpIgQhNBXCEIWVNCEIBCEIGRCSkyJvBI2Awe2CkQgSyrFlGtR/ZVHN3TLflNyxYRCDqrBnm9t1WmD95h0Xcwbj3LfWLOOy1ffDTsf9me3qlebhNZvMa9V66HA3g9v/sPyTLd13aO5eU2S3VaRmnUc3cHGOYwK3djzvrs67Wv39R/aLu5YvDU6d5Te5vVcQNgPR+U3HsUvaA9ZjSdolj+67uWosGXadYTEHeJ/wCTb1s2vBwPg4dlyw0tfoOEOMjZUph7e0SVWLCDewHjSq6Q+R0x3JgbCO2D2FJzdo7RHerqYrdRcPfad1RhYebhKtoWq0U+qKgG2m/Sb2Az3Kbazxg4xsJ0h2OlHtBrY2d0sd5+CfRlZVDOqs25z2k/DUZou8itnQzrPvUgd7X+RWl9oDcS8bnBtRv17lUbLSOApci6i7yQdZSzmoHrB7eLZHcVlU8t2Z2FUcwR4hcScnkXj2rRuLaje8T3qs0XD963g+k4HtBPgmDvxlCkcKrDwe36rjf0n5U0bH7GnLnVnBp0RMUm9JxMbYaP5lhinV1Cm78NWD2EBSDao/cP4tc1w7nJPqjy39VqnCk8/wDjd9FsMl5EtLqjXaDmAOB03DRIg6m4k8oXoRe7XRq/I/yCqfVb/Dqf06n0W78l/jPmMZsggdsdyqqhzHadMw6DGx0SdFw1iAVkuqn3aVTlSd5wqKtktVSdCi5siPaOgEA4wPd4w5YjTIsVoFZmnTA1adPFpJAIuO0EEa7xvibWBwlmIxpnrD8J1jd4oyfkoWamZcJdrnoDoBgxmYaG3XkxvVNIu9rLb9J4gYEgnpTsuk7uS1Uhva17YIDmnEESI3haDKWalN/SoHQd8BksPDWOU8F0dvgBlX4p0t8GA+N6rDud9437lNvNX6rza3ZPq0HRUYRsdi08CLljFepVmNe3ReA5rhrEiN41+IXKZZzXLZfZ7xj7KZMbWO94bjf4Lrz3v6xeXMITIi4+iraJpR0w8mfdc0COYN+K6MMVCELChNJN227lGq7AIBJCbzJJgDcJgbhN6BEphJCCSSE0CCaAhAICSYQZmT7Yabt2xdpkrKTXAXrz+VlWS1upmQuffGtc9Y9To1A7FZDaI91xHguNyXloEASuhs2UQVxux1llbE2Z2xp7j3QoOYRi1w7wpUrYDrWSy0jap6MYN20d7fyUtE7Dyhw7lnFzDiB2Xqp1Cnqu4FX1DGIAAboB5tPcrhXf8buZDu4ylWIaJ9pd97COa0n+qLHpFpqC4xpezeGngW3c1qff4l/63hrH3msPFkHuhNr24+zHFtQjyKwLPlSzv6lZp3Cq2ew3rLuOvtZPeJV+z6ZDardtUcHg+MK1tq/3ag4tnwJWGBvb8xHjCkGHUDyc0/VNpkZ36zP793yO+ire1p/fn5XjyWNonY75fyRpb+1v5pphuoUpkvcTtDSfIHvUC+k3q03Hj0QRv1kbphT0htHZ+aRA+IeuabTGFatKqZcLhg0XADZuVbqQAkmL5J1Ss0tb8XgoaLcQ0k7bz2KDFbIaSbukSBrEukDsJTpX6TD+Ju4xJCyHUXm+I3mAByUS0MBg6Tjr1CfNVHM5w5GFZhrUxFQCSB+8A/yjA61xa9Qfo02l7jotaCS7ULo+norzKs4FziBALiQNgJuC7fHWO4oQhCrIQhCAQhCAThCFQQhCEAhARCAQhCBx61dqQKEIJteRgYWwsuV6jNchaxCzeZTXV2bOMe9cthSzip/F3rhZQsX4o17rvjnNRHvrDtWeIFzGlx33BcagpPih7rY5RyxWr9d3R+AXN57VgJIXSTGdBvV7LW9saDiyAB0HObgIk34nEqhCo2VHL1rZhaH/AMxD/wC4FZtLO61Nx9m7e6nH9pC0KFPMNrqqOe9Udaiw/he5vjKzaOfo96i8fhq6XiAuISKniL6r0BuftHW2t8tM/wCSyGZ82Y4l440R5LzdCniL6r0v/W1l/iP/AKKrqZ62X46p4MPmV5whX/HD3Xd1c87Nqp1XcQ0f5LX2nPRxEUqDW73uLruAA8VyqFfET3WblDKla0H7V5I1NFzByHiVhpBNbjOqkJhJYUIQhUCEJoBCEIBCESgEIUmvgFsC+L9EE3bDiMdWKCKEIQCEJxdjy1hEJCEIHF0+ro+oQEaJiYuwnVJmB3HsSQNCEIGgICEAhCEDSQhAIROr16uCEAhCEDIhNoEiTAm84wNZSAQqBCEIAJohEqorhJCFloIQhA0IQgEIQgEIQgb3TqAuAuEYazvSQhAIQhECEIQCEIQCaEIBCEIGEIQgEIQgEIQgI1+pH/YTEXzsujbOvdEoQikhNCIEIQqBCEIBW07Q9ohr3NGwOIE8kIVR/9k=" alt="Saturn">
+        </div>
+        <div class="planet-content">
+            <h1>Saturn</h1>
+            <p>
+                Saturn is the sixth planet from the Sun and is known for its stunning and iconic ring system. It's one of the most recognizable planets in our solar system.
+            </p>
+            <h2>Key Characteristics</h2>
+            <ul>
+                <li>Ring System: Saturn's rings are composed of ice and rock particles and are the most extensive ring system in our solar system.</li>
+                <li>Composition: Saturn is primarily made up of hydrogen and helium.</li>
+                <li>Orbital Period: Approximately 29.5 Earth years.</li>
+            </ul>
+            <h2>Physical Characteristics</h2>
+            <p>
+                Saturn is a gas giant with a thick atmosphere and a relatively low density. It has a prominent equatorial bulge due to its rapid rotation.
+            </p>
+            <h2>Rings</h2>
+            <p>
+                Saturn's ring system is composed of thousands of individual ringlets. The rings are thought to be the remnants of a moon or other celestial object that broke apart.
+            </p>
+            <h2>Moons</h2>
+            <p>
+                Saturn has a diverse system of moons, with over 80 confirmed moons. Titan, Saturn's largest moon, is of particular interest and has a thick atmosphere.
+            </p>
+            <h2>Exploration</h2>
+            <p>
+                Saturn has been visited by the Cassini-Huygens spacecraft, which provided extensive data about the planet, its rings, and its moons. The spacecraft ended its mission by deliberately entering Saturn's atmosphere in 2017.
+            </p>
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>Saturn is named after the Roman god of agriculture and wealth.</li>
+                <li>It's one of the five planets visible to the naked eye from Earth.</li>
+                <li>The thickness of Saturn's rings can vary from tens of meters to several kilometers.</li>
+            </ul>
+            <h2 style="background-color: rgb(236, 233, 233);">Saturn Moons</h2>
+            <p>
+                <a href="saturnmoons.html">Learn more about Saturn Moon's</a>
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

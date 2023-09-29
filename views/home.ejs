@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        #foot{
+            margin-top: 105px;
+        }
+        tr:hover {
+            background-color:cadetblue;
+        }
+        body{
+            background: rgb(2,0,36);
+background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 45%, rgb(10, 132, 156) 100%);
+            background-repeat: no-repeat;
+            height: 100vh;
+            width:100vw;
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+        <h1 style="text-align:center;color: rgb(64, 19, 187);">Let's see the Details of Users</h1>
+
+    <div>
+        <br>
+    </div>
+    <center><h2 style="color: rgb(237, 142, 9);">User Details</h2></center>
+    <form action = '\login' method="GET">
+        <button class = 'nav-item btn btn-dark' style=" margin-left:800px;color: red;" type = "submit">LOGOUT</button>
+    </form>
+    <br>
+    <table border="2px" cellspacing="0px" cellpadding="10px" align="center" style="border-style:inset;" width="650px" color="white">
+        <tr style="color: rgb(7, 245, 221);"><th>Name</th>
+            <th>Email</th>
+            <th>password</th>
+        </tr>
+    <% for(var i =userData.length-6;i < userData.length;i++){ %>
+        <tr style="color: white;"><td><%= userData[i].fullname %></td>
+            <td><%= userData[i].email %></td>
+            <td><%= userData[i].password%></td>
+        </tr>
+    <% } %>
+    </table>
+    <br>
+    <form action="/planet" method="GET">
+        <button class="nav-item btn btn-dark" style="margin-left:550px;color: rgb(96, 216, 234);" type="submit">Universe
+        </button>
+    </form>
+    
+    <br>
+
+
+</center>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

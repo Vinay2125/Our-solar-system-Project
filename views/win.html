@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planet API Demo</title>
+    <style>
+        #planet-details {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .planet-card {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .planet-image {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="planet-details"></div>
+
+    <script>
+        const apiKey = 'HvnorLVVKBJEpa8TSJgD6Q==FqYbyo5B6Z5SqJnw';
+        const apiUrl = 'https://api.api-ninjas.com/v1/planets';
+
+        // Function to fetch planet data
+        async function fetchPlanetData() {
+            try {
+                const response = await fetch(apiUrl, {
+                    headers: {
+                        'x-api-key': apiKey
+                    }
+                });
+                const data = await response.json();
+                const planets = data;
+
+                const planetDetailsElement = document.getElementById('planet-details');
+
+                planets.forEach(planet => {
+                    const planetCard = document.createElement('div');
+                    planetCard.classList.add('planet-card');
+
+                    const planetName = document.createElement('h2');
+                    planetName.textContent = planet.name;
+                    planetCard.appendChild(planetName);
+
+                    const planetImage = document.createElement('img');
+                    planetImage.classList.add('planet-image');
+                    planetImage.src = planet.image_url;
+                    planetCard.appendChild(planetImage);
+
+                    planetDetailsElement.appendChild(planetCard);
+                });
+            } catch (error) {
+                console.error('Error fetching planet data:', error);
+            }
+        }
+
+        fetchPlanetData();
+    </script>
+</body>
+</html>
+

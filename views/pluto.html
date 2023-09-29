@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+   </style>
+    <title>Pluto</title>
+
+</head>
+<body>
+    <div class="planet-details">
+        <div class="planet-image">
+            
+            <img src="data:image/jpeg;base64,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" alt="Pluto">
+        </div>
+        <div class="planet-content">
+            <h1>Pluto</h1>
+            <p>
+                Pluto was once considered the ninth planet in our solar system, but it's now classified as a dwarf planet.
+            </p>
+            <h2>Key Characteristics</h2>
+            <ul>
+                <li>Orbital Period: Approximately 248 Earth years</li>
+                <li>Diameter: About 2,377 kilometers (1,477 miles)</li>
+                <li>Surface Features: Pluto has a diverse surface with icy mountains and a large heart-shaped region called Tombaugh Regio.</li>
+            </ul>
+            <h2>Discovery and Exploration</h2>
+            <p>
+                Pluto was discovered in 1930 by astronomer Clyde Tombaugh. In 2015, NASA's New Horizons spacecraft provided detailed images and data about Pluto during its flyby.
+            </p>
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>Pluto has a thin atmosphere primarily composed of nitrogen.</li>
+                <li>Its moon Charon is unusually large in comparison to Pluto and forms a binary system with it.</li>
+            </ul>
+            <h2 style="background-color: rgb(236, 233, 233);">Pluto Moons</h2>
+            <p>
+                <a href="plutomoons.html">Learn more about Pluto Moon's</a>
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

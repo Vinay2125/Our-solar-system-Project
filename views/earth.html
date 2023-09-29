@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15a3ea; 
+}
+
+.planet-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    color: #ff9900; 
+}
+
+h2 {
+    font-size: 1.8rem; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    background-color: #f2f2f2; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+
+@media (max-width: 600px) {
+    .planet-details {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+    <title>Earth</title>
+</head>
+<body>
+    <form action="/earth" method="GET">
+    <div class="planet-details">
+        <div class="planet-image">
+           
+            <img src="data:image/jpeg;base64,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" alt="Earth">
+        </div>
+        <div class="planet-content">
+            <h1>Earth</h1>
+            <p>
+                Earth, often called the "Blue Planet," is the third planet from the Sun and the only known celestial body to support life.
+            </p>
+            <h2>Key Characteristics</h2>
+            <ul>
+                <li>Life-Sustaining: Earth's unique combination of atmosphere, temperature, and water allows for the existence of a wide variety of life forms.</li>
+                <li>Water World: Approximately 71% of Earth's surface is covered in water, primarily in the form of oceans.</li>
+                <li>Atmosphere: Earth's atmosphere is composed mainly of nitrogen (about 78%) and oxygen (about 21%) with trace amounts of other gases.</li>
+            </ul>
+            <h2>Geography and Climate</h2>
+            <p>
+                Earth has diverse geographical features, including mountains, valleys, deserts, and polar ice caps. It experiences a range of climates from tropical to polar.
+            </p>
+            <h2>Moon</h2>
+            <p>
+                Earth has one natural satellite, the Moon, which plays a significant role in Earth's tides and has been the target of human exploration.
+            </p>
+            <h2>Human Impact</h2>
+            <p>
+                Human activities have a profound impact on Earth, including deforestation, pollution, and climate change. Conservation efforts are vital to protect our planet.
+            </p>
+            <h2>Exploration and Space Travel</h2>
+            <p>
+                Earth serves as the starting point for human exploration of space. The study of our planet from space has led to a better understanding of Earth's systems.
+            </p>
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>Earth is the only known planet to have liquid water on its surface.</li>
+                <li>It takes approximately 365.25 days for Earth to orbit the Sun, resulting in leap years.</li>
+                <li>Earth's rotation on its axis causes day and night cycles.</li>
+            </ul>
+            <p>
+                <a href="#" class="nasa-link" data-planet="earth">Learn more about Earth</a>
+            </p>
+        </form>
+            <div style="display: flex; justify-content: center;">
+                <form action="/OurSolarSystem" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; margin-right:620px; cursor: pointer; color: rgb(194, 197, 200); background-color: #07032d; height: 30px; border-radius: 4px; width: 80px;" type="submit">Back</button>
+                </form>
+                <form action="/planet" method="GET">
+                    <button style="font-weight: 600;margin-top:40px; cursor: pointer; color: rgb(238, 236, 245); background-color: #ee7c0b; height: 30px; border-radius: 4px;" type="submit">Home Page</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
