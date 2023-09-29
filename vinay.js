@@ -4,7 +4,9 @@ const port = 8000;
 const passwordhash = require("password-hash");
 const { initializeApp, cert } = require("firebase-admin/app");
 const { getFirestore } = require("firebase-admin/firestore");
-app.use(express.static("public"));
+
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const serviceAccount = require("./key.json");
 
@@ -40,8 +42,8 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
-app.post("/loginsubmit", (req, res) => {
-  const email = req.body.email;
+app.get("/loginsubmit", (req, res) => {
+  const email = req.query.email;
 
   db.collection("SIGNUP")
     .where("email", "==", email)
@@ -58,10 +60,11 @@ app.post("/loginsubmit", (req, res) => {
             res.render("planet");
           }
         }
-      });
-      if (!result) {
-        res.render("login_fail");
-      }
+        else {
+          res.render("login_fail");
+        }
+      })
+      
     })
     .catch((error) => {
       console.error("Error during login:", error);
@@ -86,7 +89,7 @@ app.post("/signupsubmit", (req, res) => {
         res.render("signup_fail");
       } else {
         db.collection("SIGNUP")
-          .where("name", "==", full_name)
+          .where("fullname", "==", full_name)
           .get()
           .then((docs) => {
             if (docs.size > 0) {
